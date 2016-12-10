@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">End</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="title_activity_test1">test1</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_crime">CrimeActivity</string>
+    <string name="crime_title_hint">Enter a title for the crime.</string>
+
 </resources>
