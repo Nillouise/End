@@ -21,6 +21,13 @@
         android:maxLines="7"
         android:id="@+id/edtContent" />
 
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chbDetail"
+        android:layout_weight="0" />
+
     <Button
         android:text="保存"
         android:layout_width="match_parent"
@@ -28,11 +35,11 @@
         android:id="@+id/btnSave"
         android:layout_weight="0" />
 
-    <CheckBox
-        android:text="CheckBox"
+    <Button
+        android:text="发送"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/chbDetail"
+        android:id="@+id/btnSend"
         android:layout_weight="0" />
 
 
