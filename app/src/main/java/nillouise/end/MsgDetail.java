@@ -94,11 +94,7 @@ public class MsgDetail extends AppCompatActivity {
                 Matcher mat = pat.matcher(title.getText());
 
                 boolean ipAddress = mat.matches();
-                if(!ipAddress)
-                {
-                    Toast.makeText(MsgDetail.this,"不是合法的IP地址",Toast.LENGTH_SHORT).show();
-                    return;
-                }
+
                 String input = title.getText().toString(); // <-- an example input
                 int port = 80; // <-- a default port.
                 String host = null;
@@ -115,6 +111,11 @@ public class MsgDetail extends AppCompatActivity {
                 }
                 EditText contentTosend =  (EditText)findViewById(R.id.edtContent);
 
+                if(!ipAddress)
+                {
+                    Toast.makeText(MsgDetail.this,"不是合法的IP地址",Toast.LENGTH_SHORT).show();
+                    host = input.split(":")[0];
+                }
                 Thread_Send thread_send = new Thread_Send(contentTosend.getText().toString().getBytes(), contentTosend.getText().toString().getBytes().length,host,port);
 
                 new Thread(thread_send).start();
